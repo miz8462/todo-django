@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block header %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">TodoList</h1>
+    <p class="lead">TodoListで忘れずやろう！</p>
+  </div>
+</div>>
+{% endblock header %}
+{% block content %}
+<div class="alert alert-success" role="alert">
+  {{ object.title }}
+</div>
+<div class="alert alert-success" role="alert">
+  {{  object.memo }}
+</div>
+{% endblock content %}
